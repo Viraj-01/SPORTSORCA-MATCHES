@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Uploaded files
+uploads/
+
+# Optional: Ignore system config files
+*.sublime-workspace
+*.vscode/
+
+# Lock files (optional)
+package-lock.json
+yarn.lock
+
+# Backup/Temp files
+*.bak
+*.tmp
+
+# Secret configs (if any)
+backend/config/*.js
+!backend/config/default.js  # Allow default.js if needed
+
+# Ignore IDE settings
+.idea/

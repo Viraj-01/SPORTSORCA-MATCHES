@@ -1,0 +1,101 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters input[type="date"],
+.filters .filter-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Set specific widths for each column */
+th:nth-child(1), td:nth-child(1) { /* Sr. No. */
+  width: 5%;
+}
+th:nth-child(2), td:nth-child(2) { /* League */
+  width: 15%;
+}
+th:nth-child(3), td:nth-child(3) { /* Season */
+  width: 10%;
+}
+th:nth-child(4), td:nth-child(4) { /* Round */
+  width: 15%;
+}
+th:nth-child(5), td:nth-child(5) { /* Home Team */
+  width: 15%;
+}
+th:nth-child(6), td:nth-child(6) { /* Away Team */
+  width: 15%;
+}
+th:nth-child(7), td:nth-child(7) { /* Date */
+  width: 10%;
+}
+th:nth-child(8), td:nth-child(8) { /* Time */
+  width: 10%;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+}
+
+.team-cell {
+  align-items: center;
+  gap: 8px;
+}
+
+.team-logo {
+  height: 1em; /* Matches the font size of the text */
+  width: auto; /* Maintains aspect ratio */
+  vertical-align: middle;
+}
